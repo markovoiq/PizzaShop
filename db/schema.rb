@@ -10,13 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.1].define(version: 2025_11_21_110506) do
+ActiveRecord::Schema[8.1].define(version: 2025_11_21_120359) do
   create_table "products", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.text "description"
-    t.boolean "is_best_offer?"
-    t.boolean "is_spicy?"
-    t.boolean "is_veg?"
+    t.boolean "is_best_offer"
+    t.boolean "is_spicy"
+    t.boolean "is_veg"
     t.string "path_to_image"
     t.decimal "price"
     t.decimal "size"
